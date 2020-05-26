@@ -1,4 +1,8 @@
 <?php 
+    include('koneksi.php');
+?>
+
+<?php 
 $conn = mysqli_connect('localhost','root','','anggota_baru');
  
 // DM0916001
@@ -48,13 +52,12 @@ if(strlen($tambah) == 1) {
 </head>
 <body>
     <?php 
-        if(isset($_GET['success'])) 
-            {
-                echo "<h4>Data berhasil di simpan!!</h4>";
-            }
-    ?>
-    <h1> ISIENG UNTUK UJI COMMIT</h1>
+        if(isset($_GET['success'])) {
+            echo "<h4>Data berhasil di simpan!!</h4>";
+        }
 
+
+    ?>
     <form action="" method="post">
     <table>
         <tr>
